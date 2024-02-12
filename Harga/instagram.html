@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Jajan Medsos</title>
+    <link rel="icon" href="../assets/images/logotab.svg" type="image/png">
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 577 Liberty Market
+
+https://templatemo.com/tm-577-liberty-market
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="../assets/images/headerlg.svg" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="../index.html" class="active">Beranda</a></li>
+                        <li><a href="../author.html">Tentang</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <!-- ***** POPUP ***** -->
+
+  <div id="overlay"></div>
+
+    <!-- Popup Ad -->
+
+
+  <div id="whatsapp-popup" onclick="redirectToWhatsApp()">
+    <img src="../assets/images/waicon.png" alt="WhatsApp Logo">
+    <h1>Hubungi kami</h1>
+  </div>
+  <script>
+    // Function to redirect to WhatsApp link
+    function redirectToWhatsApp() {
+        // Replace 'YOUR_WHATSAPP_LINK' with your actual WhatsApp link
+        window.location.href = 'https://wa.me/6285880856341';
+    }
+
+    // Function to show the WhatsApp popup when scrolling
+    function showWhatsAppPopup() {
+        var whatsappPopup = document.getElementById('whatsapp-popup');
+        if (window.scrollY > 100) {
+            whatsappPopup.style.display = 'block';
+        } else {
+            whatsappPopup.style.display = 'none';
+        }
+    }
+
+    // Attach the showWhatsAppPopup function to the scroll event
+    window.onscroll = function () {
+        showWhatsAppPopup();
+    };
+
+    // Initial check to show/hide the WhatsApp popup based on scroll position
+    showWhatsAppPopup();
+  </script>
+  
+  <div class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>JajanMedsos</h6>
+          <h2>Daftar Harga</h2>
+          <span>Home > <a href="#">Daftar Harga</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="daftarharga">
+    <div class="container">
+      <div class="row">
+        <div class="calculator">
+          <p><em>Untuk Mengetahui Harga Total Orderan yang Ingin Kamu Pesan</em></p>
+          <h1>Masukan <strong>Jumlah Order</strong> disini lalu Pilih Paket dibawah</h1>
+          <input type="number" id="quantity" placeholder="Jumlah order" class="order-input">
+          <p>#Total Harga Dibagian Paling Bawah List Paket</p>
+        </div>
+        <div class="col-lg-12">
+          <div class="harga">
+            <div class="row">
+              <!-- Item pertama -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item" data-item="Item1" onclick="configureCalculator('Item1', 150)">
+                  <img src="../assets/images/instagram/1.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Followers Indonesia<ul><li>Bergaransi 3 bulan</li><li>Followers berasal dari komunitas influencer dan freelancer</li><li>Dapat berinteraksi likes/komentar</li><li>Akun Pemesan akan ditag random Artis/Selebgram, mohon tag diterima/jangan ditolak</li><li>Pastikan akun anda dapat di tag/mantion semua orang</li><li>Dilarang private dan mengganti username selama proses</li><li>Max Order /per akun 75K</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+              <!-- Item kedua -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item" onclick="configureCalculator('Item1', 115)">
+                  <img src="../assets/images/instagram/2.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Followers WorldWide<ul><li>Bergaransi 30 hari</li><li>Investasi 1x di akun Anda</li><li>Akun dari pengguna Real Worldwide</li><li>Dapat meningkatkan kredibilitas akun</li><li>Max Order /per akun 10K</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+              <!-- Item ketiga -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item" onclick="configureCalculator('Item1', 90)">
+                  <img src="../assets/images/instagram/3.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Future Likes<ul><li>Bergaransi SEUMUR HIDUP.</li><li>Periksa format tautan dengan cermat sebelum melakukan pemesanan.</li><li>Mohon pastikan akun Anda bersifat publik, bukan pribadi.</li><li>Support Live, Reel, Post Video ataupun Foto</li><li>Lebih Hemat 10% dari pembelian Manual.</li><li>Max Order /per akun 10K</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+              <!-- Item keempat -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item" onclick="configureCalculator('Item1', 3400)">
+                  <img src="../assets/images/instagram/4.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Auto Likes<ul><li>Isi Jumlah Order dengan Jumlah likes/Photo</li><li>Investasi 1x di akun Anda</li><li>Dibutuhkan 0-24 Jam Untuk Konfirmasi Pesanan</li><li>Jangka Waktu Penggunaan Pesanan Adalah 30 Hari</li><li>Jumlah Postingan Tidak Terbatas</li><li>Mohon Tunggu dalam 10-20 menit setiap setelah posting untuk postingan selanjutnya</li><li>Max Order /per akun 50K</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+              <!-- Item kelima -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item" onclick="configureCalculator('Item1', 880)">
+                  <img src="../assets/images/instagram/5.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Comments<ul><li>Bergaransi SEUMUR HIDUP.</li><li>Comments bisa Custom atau Request Positive ataupun Negative.</li><li>Investasi 1x di akun Anda</li><li>Akun dari pengguna Mancanegara</li><li>Dapat meningkatkan kredibilitas akun</li><li>Support Reel, Post Video ataupun Foto</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+               <!-- Item keenam -->
+               <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item" onclick="configureCalculator('Item1', 50)">
+                  <img src="../assets/images/instagram/6.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Viewers<ul><li>Bergaransi SEUMUR HIDUP.</li><li>Investasi 1x di akun Anda</li><li>Akun dari pengguna Mancanegara</li><li>Dapat meningkatkan kredibilitas akun</li><li>Support Reel, Post Video ataupun Foto</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculator2">
+          <h1>Total <strong>Harga</strong> Paket Terpilih</h1>
+          <p id="result" class="result-output"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pakethemat">
+    <div class="container">
+      <div class="row">
+        <div class="judul">
+          <h1>Mau <strong>Paket Hemat</strong> ada dibawah sini !</h1>
+        </div>
+        <div class="col-lg-12">
+          <div class="paket">
+            <div class="row">
+              <!-- Item pertama -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item">
+                  <img src="../assets/images/instagram/indofol.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Followers Indonesia<ul><li>Bergaransi 3 bulan</li><li>Followers berasal dari komunitas influencer dan freelancer</li><li>Dapat berinteraksi likes/komentar</li><li>Akun Pemesan akan ditag random Artis/Selebgram, mohon tag diterima/jangan ditolak</li><li>Pastikan akun anda dapat di tag/mantion semua orang</li><li>Dilarang private dan mengganti username selama proses</li><li>Max Order /per akun 75K</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>            
+              <!-- Item kedua -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item">
+                  <img src="../assets/images/instagram/worldfol.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Followers WorldWide<ul><li>Bergaransi 30 hari.</li><li>Investasi 1x di akun Anda</li><li>Akun dari pengguna Real Worldwide</li><li>Dapat meningkatkan kredibilitas akun</li><li>Max Order /per akun 10K</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+              <!-- Item ketiga -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item">
+                  <img src="../assets/images/instagram/likes.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Random Likes<ul><li>Bergaransi SEUMUR HIDUP.</li><li>Periksa format tautan dengan cermat sebelum melakukan pemesanan.</li><li>Mohon pastikan akun Anda bersifat publik, bukan pribadi.</li><li>Support Live, Reel, Post Video ataupun Foto</li><li>Lebih Hemat 10% dari pembelian Manual.</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>            
+              <!-- Item keempat -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item">
+                  <img src="../assets/images/instagram/autolike.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Random Auto Likes<ul><li>Bergaransi SEUMUR HIDUP.</li><li>Dibutuhkan 0-24 Jam Untuk Konfirmasi Pesanan</li><li>Jangka Waktu Penggunaan Pesanan Adalah 30 Hari</li><li>Jumlah Postingan Tidak Terbatas</li><li>Mohon Tunggu dalam 10-20 menit setiap setelah posting untuk postingan selanjutnya</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>            
+              <!-- Item kelima -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item">
+                  <img src="../assets/images/instagram/viewers.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Viewers<ul><li>Bergaransi SEUMUR HIDUP.</li><li>Investasi 1x di akun Anda</li><li>Akun dari pengguna Mancanegara</li><li>Dapat meningkatkan kredibilitas akun</li><li>Support Reel, Post Video ataupun Foto</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+              <!-- Item keenam -->
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="item">
+                  <img src="../assets/images/instagram/Comments.svg" alt="">
+                  <button class="description-button" onclick="showDescription('Comments<ul><li>Bergaransi SEUMUR HIDUP.</li><li>Comments bisa Custom atau Request Positive ataupun Negative.</li><li>Investasi 1x di akun Anda</li><li>Akun dari pengguna Mancanegara</li><li>Dapat meningkatkan kredibilitas akun</li><li>Support Reel, Post Video ataupun Foto</li><strong>Mau Paket Hemat? Hubungi kami sekarang!<strong></ul>')">Deskripsi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** PROMO ***** -->
+  <div class="promo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="col-lg-12">
+            <div class="collections">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="heading2">
+                    <div class="line-dec"></div>
+                    <h2>Paket Promo <em>Pelanggan Pertama</em> di Toko.</h2>
+                  </div>
+                </div>
+              <div class="col-lg-12">
+                <div class="owl-collection owl-carousel">
+                  <div class="item">
+                    <img src="../assets/images/instagram/promo1.svg" alt="">
+                    <div class="down-content">
+                      <h4>Hot 13 Pelanggan Pertama😍<br><span class="small-text">*Syarat dan Ketentuan Berlaku</span></h4>
+                      <span class="collection">Benefit:<br><strong>Discount 10%</strong></span>
+                      <span class="category"><br><strong>500 Followers</strong></span>
+                      <span class="hemat"><strong>Hurry up !</strong></span>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="../assets/images/instagram/promo2.svg" alt="">
+                    <div class="down-content">
+                      <h4>Hot 40 Pelanggan Pertama😍<br><span class="small-text">*Syarat dan Ketentuan Berlaku</span></h4>
+                      <span class="collection">Benefit:<br><strong>500 Followers</strong></span>
+                      <span class="category"><br><strong>100 Likes</strong></span>
+                      <span class="hemat" ><strong>Hurry up !</strong></span>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="../assets/images/instagram/promo3.svg" alt="">
+                    <div class="down-content">
+                      <h4>Hot 100 Pelanggan Pertama😍<br><span class="small-text">*Syarat dan Ketentuan Berlaku</span></h4>
+                      <span class="collection">Benefit:<br><strong>Discount 5%</strong></span>
+                      <span class="category"><br><strong>300 Followers</strong></span>
+                      <span class="hemat"><strong>Hurry up !</strong></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="langkah">
+    <div class="container">
+      <div class="row">
+        <h2 class="step-title">Cara <strong>Pemesanan</strong></h2>
+        <div class="step-container">
+          <div class="step">
+              <span class="step-number">1</span>
+              <img src="../assets/images/harga/tahap1.svg" alt="Step 1">
+              <p>Cek Harga dan Hitung Total Pesanan yang Diinginkan.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <img src="../assets/images/harga/tahap2.svg" alt="Step 1">
+            <p>Pesan via Chat Whatsapp Pribadi dengan menekan whatsapp hubungi kami pada layar.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <img src="../assets/images/harga/tahap3.svg" alt="Step 1">
+            <p>Membayar Pesanan Melalui Transfer Bank atau Dana</p>
+          </div>
+          <div class="step">
+            <span class="step-number">4</span>
+            <img src="../assets/images/harga/tahap4.svg" alt="Step 1">
+            <p>Pesanan akan Diproses secara Otomatis langsung Setelah Pembayaran</p>
+          </div>
+          <div class="step">
+            <span class="step-number">5</span>
+            <img src="../assets/images/harga/tahap5.svg" alt="Step 1">
+            <p>Proses Berhasil dan Nikmati Kelebihannya</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="col-lg-12">
+      <h1><strong>Disclaimer:</strong> JajanMedsos merupakan layanan untuk meningkatkan interaksi social media sebagai sarana marketing,kami berhak membatalkan sepihak pesanan yang bertujuan untuk tindakan yang melanggar hukum.</h1>
+      <p><strong>Copyright © 2024 JajanMedsos</strong></p>
+    </div>
+  </footer> 
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../assets/js/isotope.min.js"></script>
+  <script src="../assets/js/owl-carousel.js"></script>
+
+  <script src="../assets/js/tabs.js"></script>
+  <script src="../assets/js/popup.js"></script>
+  <script src="../assets/js/custom.js"></script>
+
+  </body>
+</html>
